@@ -31,9 +31,7 @@ namespace Zerax
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
 
-            //string API = "https://api.asterax.org/api/armatagedapi/Wq+JWTIl1YhliW901+eJVdixA8h5+Rp/2561464022/Other/require(6371816420):Fire('Z_1in')";
-
-            string API = $"https://api.asterax.org/api/armatagedapi/Wq+JWTIl1YhliW901+eJVdixA8h5+Rp/{TextBoxMain1.Text}/Other/{TextBoxMain2.Text}";
+            string API = $"https://yourdomain.com/{TextBoxMain1.Text}/Other/{TextBoxMain2.Text}";
 
             var values = new Dictionary<string, string>
             {
