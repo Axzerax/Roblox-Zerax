@@ -1,0 +1,88 @@
+﻿<Window x:Class="Zerax.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zerax"
+        mc:Ignorable="d"
+        Title="Zerax" Height="450" Width="800"
+        Topmost="True"
+        ResizeMode="CanMinimize"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <Grid Background="#f6f6f6">
+            <Grid x:Name="nav_mpannel"
+                  HorizontalAlignment="Left"
+                  Width="40"
+                  Background="#4663ac">
+                <StackPanel x:Name="st_pannel">
+                    <Grid Height="40">
+                        <TextBlock Text="Z" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Hack" Foreground="White" FontSize="20">
+                        </TextBlock>
+                    </Grid>
+                </StackPanel>
+                <Grid x:Name="nav_other"
+                      HorizontalAlignment="Left"
+                      VerticalAlignment="Bottom"
+                      Width="40"
+                      Height="40">
+
+                    <TextBlock
+                        x:Name="credits_text"
+                        Text="By Xzil"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Height="15"
+                        Width="28"
+                        Foreground="White"
+                        FontSize="10">
+
+                    </TextBlock>
+                </Grid>
+            </Grid>
+        </Grid>
+        <Grid x:Name="main_grid"
+              HorizontalAlignment="Center"
+              VerticalAlignment="Top"
+              Height="100"
+              Width="500">
+            <TextBlock x:Name="main_text"
+                       Text="Welcome to Zerax! Created By Xzil_#3487 / Z_1in!"
+                       FontSize="20"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center">
+            </TextBlock>
+        </Grid>
+        <StackPanel
+            Orientation="Vertical" HorizontalAlignment="Center"
+            VerticalAlignment="Bottom"
+            Height="200"
+            Width="400">
+
+            <TextBox
+                Width="200"
+                Height="15"
+                Padding="0,0,30,0"
+                FontSize="9"
+                Name="TextBoxMain1"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Text="Game Id">
+            </TextBox>
+
+            <TextBox
+                Width="200"
+                Height="15"
+                Padding="0,0,30,0"
+                FontSize="9"
+                Name="TextBoxMain2"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Text="Script">
+            </TextBox>
+
+            <Button Width="50" Height="20" Margin="0,0,0,0" Click="Button_Click" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Window>
